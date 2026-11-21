@@ -15,7 +15,7 @@ G4 are closed below, on the runs and on the reading of the body against the repo
 and 3.4 did not close it: one maintainer wrote both callers. Every claim here names the run or
 the file it was read from.
 
-Last updated: 2026-11-21T18:45Z (merge of main adb1675 keeps 9.43-9.46 alongside 9.47-9.50: run block depth, bracket inputs, step id collisions, artifact scope)
+Last updated: 2026-11-21T17:23Z (merge of main adb1675 keeps 9.43-9.46 alongside 9.47-9.50: run block depth, bracket inputs, step id collisions, artifact scope)
 rather than three, because a contributor who picked up two of them learned no format at all. The
 organization's `ISSUE_CONTRACT.md` in `posture-sec/.github` defines PI-1: a marker line naming the
 repository, the roadmap row, the kind and the wave tier, then nine numbered sections in the order a
