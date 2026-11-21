@@ -176,7 +176,7 @@ across five files, no network beyond loopback, and none of them starts a runner.
 |---|---|---|
 | Input unusable (bad sha, bad path, bad policy) | `validate_inputs.py` | First step fails, exit 2, nothing fetched, no issue touched. |
 | Gauge refuses the config (exit 2) | `render_report.py` | Gauge writes no report to stdout on a usage error, so the renderer refuses an empty file and the run is red at that step. No issue is opened or edited. |
-| Endpoint unreachable, or one account read fails (exit 3) | `render_report.py` | Same shape: `internal/run` cancels on the first fetch error and returns no report, so the body is never rendered and the run is red. Gauge's stderr goes up as the `gauge-diagnostics` artifact. |
+| Endpoint unreachable, or one account read fails (exit 3) | `render_report.py` | Same shape: `internal/run` cancels on the first fetch error and returns no report, so the body is never rendered and the run is red. Gauge's stderr goes up as the `gauge-diagnostics-audit-exit-3` artifact. |
 | Network mismatch (exit 1) | Renders | Each account row says `not read: the endpoint is on a different network`, `acct-network-mismatch` carries the finding, and the run is green by D-05. |
 | Account not on this endpoint (exit 1) | Renders | The row says `not found on this endpoint` and carries `(not read)` in its data columns, so an absent account never reads as a configured one. |
 | Report inconsistent with the run | `render_report.py` | Exit 2, body never written, no API call made. |
